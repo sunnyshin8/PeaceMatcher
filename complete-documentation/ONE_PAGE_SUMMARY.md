@@ -23,7 +23,7 @@
 ```
 1. Go: https://myaccount.google.com/apppasswords
 2. Get: 16-character password (remove spaces)
-3. Edit: c:\Users\anndy\MagicMeds\.env.local
+3. Edit: c:\Users\anndy\PeaceMatcher\.env.local
 4. Set: EMAIL_PASSWORD=xxxxxxxxxxxxxxxx
 5. Restart: npm run dev
 ```

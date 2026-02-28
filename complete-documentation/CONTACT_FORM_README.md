@@ -36,7 +36,7 @@ Your contact form is now fully integrated with email functionality. This README 
 
 ### Step 3: Add to Configuration
 ```
-Open: c:\Users\anndy\MagicMeds\.env.local
+Open: c:\Users\anndy\PeaceMatcher\.env.local
 
 Find this line:
 EMAIL_PASSWORD=your_app_password_here
@@ -139,7 +139,7 @@ Dependencies:
 ```
 EMAIL_USER=shingloo93@gmail.com       # Your Gmail
 EMAIL_PASSWORD=xxxxx...xxxxx          # 16-char app password
-EMAIL_FROM=noreply@magicmeds.com      # Sender address
+EMAIL_FROM=noreply@PeaceMatcher.com      # Sender address
 EMAIL_TO=shingloo93@gmail.com         # Admin recipient
 ```
 
@@ -281,6 +281,6 @@ Your contact form email system is **99% complete** and ready to go!
 
 ---
 
-*Created with ❤️ for MagicMeds*
+*Created with ❤️ for PeaceMatcher*
 *Last Updated: Current Session*
 *Dev Server: Running at http://localhost:3000*

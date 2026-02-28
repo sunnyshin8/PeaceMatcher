@@ -123,9 +123,9 @@ export default function GuardianLoginPage() {
                   <SecurityIcon sx={{ fontSize: '2rem', color: '#2196f3', mr: 2 }} />
                   <Typography variant="h6">Guardian Verification</Typography>
                 </Box>
-                
+
                 <Alert severity="info" sx={{ mb: 3 }}>
-                  Enter the email address you used when you were added as a guardian. 
+                  Enter the email address you used when you were added as a guardian.
                   We'll send you a verification code for secure access.
                 </Alert>
 
@@ -165,7 +165,7 @@ export default function GuardianLoginPage() {
                 </Box>
 
                 <Alert severity="success" sx={{ mb: 3 }}>
-                  Verification code sent to <strong>{guardianEmail}</strong>. 
+                  Verification code sent to <strong>{guardianEmail}</strong>.
                   Please check your email and enter the 6-digit code below.
                 </Alert>
 
@@ -213,7 +213,7 @@ export default function GuardianLoginPage() {
                 </Box>
 
                 <Alert severity="info" sx={{ mb: 3 }}>
-                  You are authorized to access the following patient accounts. 
+                  You are authorized to access the following patient accounts.
                   Select the person you want to help manage.
                 </Alert>
 
@@ -235,9 +235,9 @@ export default function GuardianLoginPage() {
                       <CardContent>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                            <Avatar sx={{ 
-                              bgcolor: '#ff6b6b', 
-                              width: 56, 
+                            <Avatar sx={{
+                              bgcolor: '#ff6b6b',
+                              width: 56,
                               height: 56,
                               fontSize: '1.5rem'
                             }}>
@@ -256,7 +256,7 @@ export default function GuardianLoginPage() {
                             </Box>
                           </Box>
                           <Box sx={{ textAlign: 'right' }}>
-                            <Chip 
+                            <Chip
                               label={`${patient.riskLevel} Risk`}
                               color={getRiskLevelColor(patient.riskLevel)}
                               sx={{ mb: 1 }}
@@ -282,13 +282,13 @@ export default function GuardianLoginPage() {
                   Access Granted Successfully!
                 </Typography>
                 <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
-                  You now have guardian access to manage the selected patient's healthcare. 
+                  You now have guardian access to manage the selected patient's healthcare.
                   Redirecting to their dashboard...
                 </Typography>
-                
+
                 <Alert severity="warning">
                   <Typography variant="body2">
-                    <strong>Remember:</strong> You are accessing someone else's medical information. 
+                    <strong>Remember:</strong> You are accessing someone else's medical information.
                     Please use this access responsibly and only for their healthcare benefit.
                   </Typography>
                 </Alert>
@@ -298,7 +298,7 @@ export default function GuardianLoginPage() {
 
           <Box sx={{ textAlign: 'center', mt: 4 }}>
             <Typography variant="body2" color="text.secondary">
-              Need help? Contact our support team at support@magicmeds.com
+              Need help? Contact our support team at support@PeaceMatcher.com
             </Typography>
           </Box>
         </Paper>

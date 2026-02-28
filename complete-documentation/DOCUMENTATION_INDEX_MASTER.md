@@ -245,7 +245,7 @@ Still stuck?
 ## 💾 CONFIGURATION REFERENCE
 
 ### File Locations
-- **Config**: `c:\Users\anndy\MagicMeds\.env.local`
+- **Config**: `c:\Users\anndy\PeaceMatcher\.env.local`
 - **Backend**: `src/app/api/contact/route.ts`
 - **Frontend**: `src/app/contact/page.tsx`
 
@@ -253,7 +253,7 @@ Still stuck?
 ```
 EMAIL_USER=shingloo93@gmail.com
 EMAIL_PASSWORD=xxxxxxxxxxxxxxxx  (16-char App Password, no spaces)
-EMAIL_FROM=noreply@magicmeds.com
+EMAIL_FROM=noreply@PeaceMatcher.com
 EMAIL_TO=shingloo93@gmail.com
 ```
 

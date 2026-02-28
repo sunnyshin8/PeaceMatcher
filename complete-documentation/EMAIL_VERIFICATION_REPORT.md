@@ -77,7 +77,7 @@ Content:
 ```
 From: process.env.EMAIL_USER
 To: [User's Email]
-Subject: We received your message - MagicMeds
+Subject: We received your message - PeaceMatcher
 Content:
   - Thank you message
   - Message details recap
@@ -154,7 +154,7 @@ When you're ready to test (after adding App Password):
 ## 📦 File Structure
 
 ```
-MagicMeds/
+PeaceMatcher/
 ├── src/
 │   └── app/
 │       ├── api/

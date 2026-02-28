@@ -39,12 +39,12 @@ export async function POST(request: Request) {
     }, []);
 
     // Get medicines considering user's conditions and allergies
-    const relevantMedicines = mentionedSymptoms.length > 0 
+    const relevantMedicines = mentionedSymptoms.length > 0
       ? medicineDb.findMedicinesForSymptoms(mentionedSymptoms)
         .filter(med => {
           const userAllergies = userInfo?.allergies || [];
           const userConditions = userInfo?.conditions || [];
-          return !med.contraindications.some(contra => 
+          return !med.contraindications.some(contra =>
             userAllergies.includes(contra) || userConditions.includes(contra)
           );
         })
@@ -52,7 +52,7 @@ export async function POST(request: Request) {
 
     // Handle different contexts
     let enhancedMessage;
-    
+
     if (context === 'healthcare_support') {
       // Support context - focus on platform help and general healthcare guidance
       enhancedMessage = {
@@ -64,7 +64,7 @@ export async function POST(request: Request) {
           timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
         },
         platformInfo: {
-          name: 'MagicMeds',
+          name: 'PeaceMatcher',
           features: ['appointments', 'telehealth', 'prescriptions', 'chat support', 'medical records'],
           supportTopics: ['booking appointments', 'video consultations', 'account issues', 'platform navigation', 'general healthcare questions']
         }
@@ -80,8 +80,8 @@ export async function POST(request: Request) {
         },
         analysis: {
           detectedSymptoms: mentionedSymptoms,
-          severityIndicators: mentionedSymptoms.some(s => 
-            ['severe', 'extreme', 'intense', 'unbearable'].some(indicator => 
+          severityIndicators: mentionedSymptoms.some(s =>
+            ['severe', 'extreme', 'intense', 'unbearable'].some(indicator =>
               message.toLowerCase().includes(indicator)
             )
           )
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
           description: med.description,
           sideEffects: med.sideEffects,
           dosageInfo: medicineDb.getDosageByAgeGroup(
-            med.name, 
+            med.name,
             userInfo?.ageGroup || 'adult'
           ),
           contraindications: med.contraindications
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
 
     try {
       const response = await getHealthAssistantResponse(JSON.stringify(enhancedMessage));
-      
+
       // Rate limiting headers (to be implemented with proper rate limiting)
       const headers = new Headers({
         'X-RateLimit-Limit': '60',
@@ -110,14 +110,14 @@ export async function POST(request: Request) {
       });
 
       return NextResponse.json(
-        { 
+        {
           response,
           symptoms: mentionedSymptoms,
           hasSevereSymptoms: enhancedMessage.analysis?.severityIndicators || false,
           timestamp: enhancedMessage.userContext.timestamp,
           context: context || 'medical'
-        }, 
-        { 
+        },
+        {
           status: 200,
           headers
         }
@@ -131,10 +131,10 @@ export async function POST(request: Request) {
     }
   } catch (error) {
     console.error('Request Processing Error:', error);
-    
+
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { 
+        {
           error: 'Invalid request data',
           details: error.issues.map(e => ({
             path: e.path.join('.'),

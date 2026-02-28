@@ -1,7 +1,7 @@
-# 🏥 MagicMeds - Project Analysis Report
+# 🏥 PeaceMatcher - Project Analysis Report
 
 **Date**: November 13, 2025  
-**Project**: MagicMeds - AI-Powered Healthcare Platform  
+**Project**: PeaceMatcher - AI-Powered Healthcare Platform  
 **Status**: Development Phase  
 **Version**: 0.1.0
 
@@ -25,7 +25,7 @@
 
 ## Executive Summary
 
-**MagicMeds** is a next-generation AI-powered healthcare management platform designed specifically for the Indian healthcare ecosystem. It combines cutting-edge technologies (Next.js, Material-UI, Google Gemini AI) with HIPAA-compliant security practices to deliver a comprehensive healthcare experience.
+**PeaceMatcher** is a next-generation AI-powered healthcare management platform designed specifically for the Indian healthcare ecosystem. It combines cutting-edge technologies (Next.js, Material-UI, Google Gemini AI) with HIPAA-compliant security practices to deliver a comprehensive healthcare experience.
 
 ### Core Value Proposition
 - 🤖 **AI-Powered Healthcare Assistant**: 24/7 medical guidance via Gemini AI
@@ -324,7 +324,7 @@ Display to User with Safety Warnings
 ## Directory Structure
 
 ```
-c:\Users\anndy\MagicMeds
+c:\Users\anndy\PeaceMatcher
 │
 ├── 📄 package.json                    # Project dependencies & scripts
 ├── 📄 next.config.ts                  # Next.js configuration
@@ -621,7 +621,7 @@ Cache Expiration:
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd c:\Users\anndy\MagicMeds
+cd c:\Users\anndy\PeaceMatcher
 
 # Install dependencies
 npm install
@@ -685,7 +685,7 @@ npm run dev
 GOOGLE_AI_STUDIO_API_KEY=<your-gemini-api-key>
 
 # Optional for Production
-NEXT_PUBLIC_APP_URL=https://magicmeds.com
+NEXT_PUBLIC_APP_URL=https://PeaceMatcher.com
 DATABASE_URL=<database-connection-string>
 JWT_SECRET=<jwt-signing-secret>
 ```
@@ -898,7 +898,7 @@ npm run build
 
 # Use PM2 for process management
 npm install -g pm2
-pm2 start npm --name "magicmeds" -- start
+pm2 start npm --name "PeaceMatcher" -- start
 pm2 save
 pm2 startup
 ```
@@ -909,7 +909,7 @@ pm2 startup
 # Production .env settings
 GOOGLE_AI_STUDIO_API_KEY=<production-key>
 NODE_ENV=production
-NEXT_PUBLIC_APP_URL=https://magicmeds.com
+NEXT_PUBLIC_APP_URL=https://PeaceMatcher.com
 DATABASE_URL=<production-db>
 JWT_SECRET=<secure-random-secret>
 ```

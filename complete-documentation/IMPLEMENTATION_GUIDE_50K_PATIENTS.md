@@ -1,4 +1,4 @@
-# MagicMeds: Implementation Guide - 50K Patient Mock Data & Clinician Dashboard
+# PeaceMatcher: Implementation Guide - 50K Patient Mock Data & Clinician Dashboard
 
 **Last Updated**: November 15, 2025  
 **Version**: 1.0
@@ -22,7 +22,7 @@ The mock patient data includes:
 **Run the generator**:
 
 ```bash
-cd c:\Users\anndy\MagicMeds
+cd c:\Users\anndy\PeaceMatcher
 node generateMockPatients.js
 ```
 
@@ -414,7 +414,7 @@ curl http://localhost:3000/api/clinician/appointments?filter=past&limit=10 | jq 
 ## 📝 File Locations
 
 ```
-MagicMeds/
+PeaceMatcher/
 ├── generateMockPatients.js                 # Generator script
 ├── public/data/
 │   ├── patients.json                       # 50K patients (500MB)

@@ -1,4 +1,4 @@
-# 🎯 MagicMeds Email Integration - Status Dashboard
+# 🎯 PeaceMatcher Email Integration - Status Dashboard
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
@@ -94,7 +94,7 @@ NEXT STEP (1 Action Required):
 
 1️⃣  Add Gmail App Password to .env.local
     
-    Where:     c:\Users\anndy\MagicMeds\.env.local
+    Where:     c:\Users\anndy\PeaceMatcher\.env.local
     Find:      EMAIL_PASSWORD=your_app_password_here
     Change:    EMAIL_PASSWORD=xxxxxxxxxxxx
     Note:      Use 16-char password, no spaces

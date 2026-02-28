@@ -1,7 +1,7 @@
-# MagicMeds Email Configuration - Setup Complete ✅
+# PeaceMatcher Email Configuration - Setup Complete ✅
 
 ## Summary
-The contact form backend email functionality has been successfully integrated into MagicMeds using Nodemailer and Gmail SMTP.
+The contact form backend email functionality has been successfully integrated into PeaceMatcher using Nodemailer and Gmail SMTP.
 
 ## What's Been Done
 
@@ -64,7 +64,7 @@ The contact form backend email functionality has been successfully integrated in
    ```
    EMAIL_USER=shingloo93@gmail.com
    EMAIL_PASSWORD=xxxxxxxxxxxx  (16-char password, no spaces)
-   EMAIL_FROM=noreply@magicmeds.com
+   EMAIL_FROM=noreply@PeaceMatcher.com
    EMAIL_TO=shingloo93@gmail.com
    ```
 

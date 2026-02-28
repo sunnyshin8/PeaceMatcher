@@ -131,8 +131,8 @@ export default function GuardiansPage() {
       background: 'linear-gradient(135deg, #0f2027 0%, #203a43 25%, #2c5364 50%, #4facfe 75%, #00f2fe 100%)',
     }}>
       <Container maxWidth="lg" sx={{ py: 4 }}>
-        <Typography variant="h3" gutterBottom sx={{ 
-          mb: 3, 
+        <Typography variant="h3" gutterBottom sx={{
+          mb: 3,
           fontWeight: 'bold',
           color: 'white',
           textAlign: 'center',
@@ -151,8 +151,8 @@ export default function GuardiansPage() {
             👨‍👩‍👧‍👦 What is Guardian Care?
           </Typography>
           <Typography variant="body2">
-            Guardian Care allows you to designate up to <strong>3 trusted individuals</strong> who can access and manage your 
-            MagicMeds account when you're too sick or unable to manage your healthcare yourself. Guardians can view your 
+            Guardian Care allows you to designate up to <strong>3 trusted individuals</strong> who can access and manage your
+            PeaceMatcher account when you're too sick or unable to manage your healthcare yourself. Guardians can view your
             medical information, schedule appointments, and communicate with healthcare providers on your behalf.
           </Typography>
         </Alert>
@@ -160,7 +160,7 @@ export default function GuardiansPage() {
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '2fr 1fr' }, gap: 3 }}>
           {/* Current Guardians */}
           <Card>
-            <CardHeader 
+            <CardHeader
               title={`Your Guardians (${guardians.length}/3)`}
               action={
                 <Button
@@ -168,7 +168,7 @@ export default function GuardiansPage() {
                   startIcon={<PersonAddIcon />}
                   onClick={() => setIsAddDialogOpen(true)}
                   disabled={guardians.length >= 3}
-                  sx={{ 
+                  sx={{
                     background: 'linear-gradient(45deg, #43e97b, #38f9d7)',
                     '&:hover': {
                       background: 'linear-gradient(45deg, #38f9d7, #43e97b)',
@@ -201,8 +201,8 @@ export default function GuardiansPage() {
                               {guardian.name}
                               {guardian.isVerified && <VerifiedIcon color="success" fontSize="small" />}
                             </Typography>
-                            <Chip 
-                              label={guardian.relationship} 
+                            <Chip
+                              label={guardian.relationship}
                               color={getRelationshipColor(guardian.relationship)}
                               size="small"
                               sx={{ mt: 1 }}
@@ -212,8 +212,8 @@ export default function GuardiansPage() {
                             <IconButton size="small" color="primary">
                               <EditIcon />
                             </IconButton>
-                            <IconButton 
-                              size="small" 
+                            <IconButton
+                              size="small"
                               color="error"
                               onClick={() => handleRemoveGuardian(guardian.id)}
                             >
@@ -221,7 +221,7 @@ export default function GuardiansPage() {
                             </IconButton>
                           </Box>
                         </Box>
-                        
+
                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                             <EmailIcon fontSize="small" color="action" />
@@ -241,8 +241,8 @@ export default function GuardiansPage() {
                             )}
                           </Typography>
                           <br />
-                          <Chip 
-                            label={guardian.isVerified ? 'Verified' : 'Pending Verification'} 
+                          <Chip
+                            label={guardian.isVerified ? 'Verified' : 'Pending Verification'}
                             color={guardian.isVerified ? 'success' : 'warning'}
                             size="small"
                             sx={{ mt: 1 }}
@@ -275,35 +275,35 @@ export default function GuardiansPage() {
               <List dense>
                 <ListItem>
                   <ListItemIcon><SecurityIcon color="success" /></ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="View medical records"
                     secondary="Access your health history and test results"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon><SecurityIcon color="success" /></ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Schedule appointments"
                     secondary="Book and manage healthcare appointments"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon><SecurityIcon color="success" /></ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Communicate with doctors"
                     secondary="Chat and video call with healthcare providers"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon><SecurityIcon color="success" /></ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Manage prescriptions"
                     secondary="View and refill medication orders"
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon><SecurityIcon color="error" /></ListItemIcon>
-                  <ListItemText 
+                  <ListItemText
                     primary="Emergency access"
                     secondary="Access emergency protocols and contact information"
                   />
@@ -318,8 +318,8 @@ export default function GuardiansPage() {
         </Box>
 
         {/* Add Guardian Dialog */}
-        <Dialog 
-          open={isAddDialogOpen} 
+        <Dialog
+          open={isAddDialogOpen}
           onClose={() => setIsAddDialogOpen(false)}
           maxWidth="sm"
           fullWidth
@@ -334,7 +334,7 @@ export default function GuardiansPage() {
                 onChange={(e) => setNewGuardian({ ...newGuardian, name: e.target.value })}
                 required
               />
-              
+
               <FormControl fullWidth required>
                 <InputLabel>Relationship</InputLabel>
                 <Select
@@ -372,14 +372,14 @@ export default function GuardiansPage() {
 
             <Alert severity="info" sx={{ mt: 3 }}>
               <Typography variant="body2">
-                The person you're adding will receive an email invitation to become your guardian. 
+                The person you're adding will receive an email invitation to become your guardian.
                 They must verify their email and agree to the terms before gaining access.
               </Typography>
             </Alert>
           </DialogContent>
           <DialogActions>
             <Button onClick={() => setIsAddDialogOpen(false)}>Cancel</Button>
-            <Button 
+            <Button
               onClick={handleAddGuardian}
               variant="contained"
               disabled={!newGuardian.name || !newGuardian.relationship || !newGuardian.email || !newGuardian.phone}

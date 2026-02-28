@@ -70,7 +70,7 @@ abcdefghijklmnop
 
 ### ⏱️ Step 4: Update `.env.local` (1 minute)
 
-1. Open file: `c:\Users\anndy\MagicMeds\.env.local`
+1. Open file: `c:\Users\anndy\PeaceMatcher\.env.local`
    - Use Notepad or VS Code
 
 2. Find this line:
@@ -162,7 +162,7 @@ After completing all steps:
 
 **Gmail Account**: shingloo93@gmail.com
 **Contact Form**: http://localhost:3000/contact
-**Config File**: c:\Users\anndy\MagicMeds\.env.local
+**Config File**: c:\Users\anndy\PeaceMatcher\.env.local
 **Error Code**: 535 (EAUTH)
 **Solution Time**: ~5 minutes
 

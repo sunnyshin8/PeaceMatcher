@@ -1,7 +1,7 @@
 # Medication Recommendation Update: Dolo 650mg
 
 ## Overview
-Updated the MagicMeds AI system to recommend **Dolo 650mg** (Paracetamol 650mg) instead of generic Acetaminophen for fever management, as per Indian pharmaceutical preferences.
+Updated the PeaceMatcher AI system to recommend **Dolo 650mg** (Paracetamol 650mg) instead of generic Acetaminophen for fever management, as per Indian pharmaceutical preferences.
 
 ## Changes Made
 

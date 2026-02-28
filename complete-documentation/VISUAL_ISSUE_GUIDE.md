@@ -40,7 +40,7 @@
 │    ✅ Done                                                           │
 │                                                                       │
 │  Step 3: Update .env.local                                          │
-│  c:\Users\anndy\MagicMeds\.env.local                               │
+│  c:\Users\anndy\PeaceMatcher\.env.local                               │
 │    Find:  EMAIL_PASSWORD=your_app_password_here                     │
 │    Replace: EMAIL_PASSWORD=abcdefghijklmnop                         │
 │    (remove spaces: abcd efgh ijkl mnop → abcdefghijklmnop)         │

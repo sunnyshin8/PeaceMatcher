@@ -1,4 +1,4 @@
-# 🏗️ MagicMeds Architecture & Implementation Roadmap
+# 🏗️ PeaceMatcher Architecture & Implementation Roadmap
 
 **Version**: 1.0  
 **Date**: November 13, 2025

@@ -18,7 +18,7 @@
 
 ### ⏱️ Step 3: Add to .env.local (10 sec)
 ```
-Open: c:\Users\anndy\MagicMeds\.env.local
+Open: c:\Users\anndy\PeaceMatcher\.env.local
 
 Change this line:
   EMAIL_PASSWORD=your_app_password_here

@@ -1,4 +1,4 @@
-# 📚 MagicMeds Email Integration - Documentation Index
+# 📚 PeaceMatcher Email Integration - Documentation Index
 
 ## 📖 Available Documentation
 

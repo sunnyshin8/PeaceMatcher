@@ -52,7 +52,7 @@ The contact form tries to send an email using Gmail SMTP:
    - Copy: The exact characters
 
 3. **Update .env.local**
-   - File: `c:\Users\anndy\MagicMeds\.env.local`
+   - File: `c:\Users\anndy\PeaceMatcher\.env.local`
    - Find: `EMAIL_PASSWORD=your_app_password_here`
    - Replace: `EMAIL_PASSWORD=abcdefghijklmnop`
    - Note: Remove spaces (`xxxx xxxx` → `xxxxxxxx`)

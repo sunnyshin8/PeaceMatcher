@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
+import ErrorBoundary from '@/components/ErrorBoundary';
+import EmergencySOS from '@/components/EmergencySOS';
+import { ToastProvider } from '@/components/ToastProvider';
 import ThemeRegistry from './ThemeRegistry';
 import "./globals.css";
 
@@ -15,8 +19,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MagicMeds - Your AI Healthcare Assistant",
-  description: "Get instant answers to your health-related questions with our AI-powered healthcare assistant.",
+  title: "PeaceMatcher - AI-Powered Healthcare Platform",
+  description: "AI-powered healthcare platform providing intelligent medical assistance, telehealth, and comprehensive health management for every family.",
+  keywords: ["healthcare", "AI", "telehealth", "medical assistant", "health platform", "PeaceMatcher"],
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -28,10 +36,16 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased">
         <ThemeRegistry>
-          <NavBar />
-          <main className="min-h-screen pb-8">
-            {children}
-          </main>
+          <ToastProvider>
+            <ErrorBoundary>
+              <NavBar />
+              <main className="min-h-screen">
+                {children}
+              </main>
+              <Footer />
+              <EmergencySOS />
+            </ErrorBoundary>
+          </ToastProvider>
         </ThemeRegistry>
       </body>
     </html>

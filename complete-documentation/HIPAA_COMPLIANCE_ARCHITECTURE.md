@@ -1,4 +1,4 @@
-# MagicMeds: HIPAA Compliance Architecture - Detailed Documentation
+# PeaceMatcher: HIPAA Compliance Architecture - Detailed Documentation
 
 **Document Version**: 1.0  
 **Last Updated**: November 15, 2025  
@@ -11,7 +11,7 @@
 
 1. [Executive Summary](#executive-summary)
 2. [HIPAA Regulatory Framework Overview](#hipaa-regulatory-framework-overview)
-3. [MagicMeds Security & Compliance Architecture](#magicmeds-security--compliance-architecture)
+3. [PeaceMatcher Security & Compliance Architecture](#PeaceMatcher-security--compliance-architecture)
 4. [Core HIPAA Implementation Components](#core-hipaa-implementation-components)
 5. [File Locations & Technical Implementations](#file-locations--technical-implementations)
 6. [Data Protection Mechanisms](#data-protection-mechanisms)
@@ -25,7 +25,7 @@
 
 ## Executive Summary
 
-**MagicMeds** implements comprehensive HIPAA (Health Insurance Portability and Accountability Act) compliance mechanisms across its entire application stack. The platform protects Protected Health Information (PHI) through a multi-layered security architecture combining:
+**PeaceMatcher** implements comprehensive HIPAA (Health Insurance Portability and Accountability Act) compliance mechanisms across its entire application stack. The platform protects Protected Health Information (PHI) through a multi-layered security architecture combining:
 
 - **Data De-identification & Anonymization** - Removes personally identifiable information (PII) from all patient-facing data
 - **Input Validation & Sanitization** - Prevents injection attacks and data corruption
@@ -56,7 +56,7 @@ The **Health Insurance Portability and Accountability Act (1996)** is a U.S. fed
 
 ### The Three Main Rules
 
-| Rule | Purpose | MagicMeds Implementation |
+| Rule | Purpose | PeaceMatcher Implementation |
 |------|---------|-------------------------|
 | **Privacy Rule** | Controls use and disclosure of PHI | De-identification, access controls |
 | **Security Rule** | Requires safeguards for ePHI | Encryption, validation, audit trails |
@@ -78,7 +78,7 @@ The **Health Insurance Portability and Accountability Act (1996)** is a U.S. fed
 
 ---
 
-## MagicMeds Security & Compliance Architecture
+## PeaceMatcher Security & Compliance Architecture
 
 ### Layered Security Model
 
@@ -401,7 +401,7 @@ export async function POST(request: Request) {
 ### Complete File Reference Map
 
 ```
-MagicMeds/
+PeaceMatcher/
 │
 ├── 📄 HIPAA_COMPLIANCE_ARCHITECTURE.md ← THIS FILE
 │
@@ -596,7 +596,7 @@ DATA AT PROCESS (Memory)
 // signup/page.tsx - Step 3: Medical History & Consent
 <FormControlLabel
   control={<Checkbox name="agreeToTerms" />}
-  label="I agree to MagicMeds Terms of Service and Privacy Policy"
+  label="I agree to PeaceMatcher Terms of Service and Privacy Policy"
 />
 <FormControlLabel
   control={<Checkbox name="agreeToDataProcessing" />}
@@ -936,7 +936,7 @@ await auditLog({
 | **OAuth 2.0 & OIDC** | Secure authentication | login/signup pages |
 | **OWASP Top 10** | Web application security | Input validation, error handling |
 
-### Related Documentation in MagicMeds
+### Related Documentation in PeaceMatcher
 
 ```
 📁 Project Documentation
@@ -961,7 +961,7 @@ await auditLog({
 
 ## Conclusion
 
-**MagicMeds** implements comprehensive HIPAA compliance through:
+**PeaceMatcher** implements comprehensive HIPAA compliance through:
 
 1. ✅ **Automated De-identification** - Converts PHI to safe anonymized data
 2. ✅ **Input Validation** - Prevents malicious data and accidental exposure
@@ -987,11 +987,11 @@ await auditLog({
 
 ---
 
-**Document Prepared By**: MagicMeds Development Team  
+**Document Prepared By**: PeaceMatcher Development Team  
 **Last Reviewed**: November 15, 2025  
 **Next Review Date**: May 15, 2026  
 **Compliance Status**: ✅ In Progress (Implemented & Monitored)
 
 ---
 
-*This document is confidential and intended for healthcare professionals and compliance officers only. For questions about HIPAA compliance in MagicMeds, contact your security officer or development lead.*
+*This document is confidential and intended for healthcare professionals and compliance officers only. For questions about HIPAA compliance in PeaceMatcher, contact your security officer or development lead.*

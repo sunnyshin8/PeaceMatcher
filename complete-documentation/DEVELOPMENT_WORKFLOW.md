@@ -1,4 +1,4 @@
-# 🔄 MagicMeds Development Workflow & Process Guide
+# 🔄 PeaceMatcher Development Workflow & Process Guide
 
 **Version**: 1.0  
 **Date**: November 13, 2025
@@ -24,7 +24,7 @@
 
 ```
 STEP 1.1: Clone Repository
-├─ Command: git clone <repository-url> c:\Users\anndy\MagicMeds
+├─ Command: git clone <repository-url> c:\Users\anndy\PeaceMatcher
 ├─ Verify: .git folder exists
 └─ Output: Repository cloned locally
 
@@ -668,8 +668,8 @@ vercel deploy --prod
 
 # Via custom server:
 npm run build
-pm2 restart magicmeds
-pm2 logs magicmeds
+pm2 restart PeaceMatcher
+pm2 logs PeaceMatcher
 ```
 
 ---
@@ -781,7 +781,7 @@ npm run dev -- -p 3001
 
 ## Git Workflow
 
-### Standard Git Workflow for MagicMeds
+### Standard Git Workflow for PeaceMatcher
 
 ```
 INITIAL SETUP:

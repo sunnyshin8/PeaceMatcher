@@ -1,4 +1,4 @@
-# 🏥 MagicMeds: Complete Implementation Summary
+# 🏥 PeaceMatcher: Complete Implementation Summary
 
 **Date**: November 15, 2025  
 **Implementation**: Clinician Dashboard + 50K Patient Mock Data + Real-time Appointments
@@ -244,7 +244,7 @@ GET /api/clinician/appointments?filter=upcoming&limit=100
 ## 🗂️ File Structure
 
 ```
-MagicMeds/
+PeaceMatcher/
 │
 ├── generateMockPatients.js                          # Main generator script
 │
@@ -278,7 +278,7 @@ MagicMeds/
 
 ### Step 1: Generate Mock Data
 ```bash
-cd c:\Users\anndy\MagicMeds
+cd c:\Users\anndy\PeaceMatcher
 node generateMockPatients.js
 ```
 

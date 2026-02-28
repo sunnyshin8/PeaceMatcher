@@ -1,4 +1,4 @@
-# 📧 MagicMeds Email Integration - Complete Summary
+# 📧 PeaceMatcher Email Integration - Complete Summary
 
 ## What Was Done ✅
 
@@ -70,7 +70,7 @@ Get: 16-character password
 
 ### Step 3: Update Configuration
 ```
-Edit: c:\Users\anndy\MagicMeds\.env.local
+Edit: c:\Users\anndy\PeaceMatcher\.env.local
 Find: EMAIL_PASSWORD=your_app_password_here
 Replace: EMAIL_PASSWORD=xxxxxxxxxxxx (your password, no spaces)
 Save: File
@@ -110,7 +110,7 @@ Content:
 ### User Confirmation Email
 ```
 To: User's provided email
-Subject: We received your message - MagicMeds
+Subject: We received your message - PeaceMatcher
 Content:
   - Thank you message
   - Message recap
@@ -124,7 +124,7 @@ Content:
 ## File Locations
 
 ```
-Project Root: c:\Users\anndy\MagicMeds\
+Project Root: c:\Users\anndy\PeaceMatcher\
 
 Configuration Files:
 ├── .env.local ................................. Configuration (NEEDS App Password)

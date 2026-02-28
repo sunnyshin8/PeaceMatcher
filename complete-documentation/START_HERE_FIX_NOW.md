@@ -16,7 +16,7 @@
 
 #### 📍 Step 2: Edit Configuration File (1 min)
 ```
-1. Open: c:\Users\anndy\MagicMeds\.env.local
+1. Open: c:\Users\anndy\PeaceMatcher\.env.local
 2. Find:    EMAIL_PASSWORD=your_app_password_here
 3. Replace: EMAIL_PASSWORD=abcdefghijklmnop
    (Remove ALL spaces: "abcd efgh ijkl mnop" → "abcdefghijklmnop")
@@ -26,7 +26,7 @@
 #### 📍 Step 3: Restart Server (2 min)
 ```
 1. Open Terminal (PowerShell)
-2. Go to: c:\Users\anndy\MagicMeds
+2. Go to: c:\Users\anndy\PeaceMatcher
 3. Stop server: Press Ctrl+C
 4. Start server: npm run dev
 5. Wait for: ✓ Ready in XXXms
@@ -58,7 +58,7 @@ Make sure you have:
 ## 💡 Important Tips
 
 - **No spaces in password**: "abcd efgh ijkl mnop" → "abcdefghijklmnop"
-- **Exact file path**: c:\Users\anndy\MagicMeds\.env.local
+- **Exact file path**: c:\Users\anndy\PeaceMatcher\.env.local
 - **Save the file**: After editing, press Ctrl+S
 - **Restart is required**: Env file changes need server restart
 

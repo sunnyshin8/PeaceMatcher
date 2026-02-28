@@ -3,10 +3,11 @@
  * For real-time dashboard analytics and predictive features
  */
 
-const GEMINI_API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+// Server-only API key - never expose to client bundle
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_STUDIO_API_KEY;
 
 if (!GEMINI_API_KEY) {
-  console.warn('Warning: NEXT_PUBLIC_GEMINI_API_KEY is not set. Some features may not work.');
+  console.warn('Warning: GEMINI_API_KEY is not set. AI analytics features may not work.');
 }
 
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';

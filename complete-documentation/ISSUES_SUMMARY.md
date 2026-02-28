@@ -18,7 +18,7 @@ This is a placeholder, not real credentials!
 1. Go to: https://myaccount.google.com/apppasswords
 2. Generate App Password (Mail, Windows Computer)
 3. Copy 16-character password (remove spaces)
-4. Edit: `c:\Users\anndy\MagicMeds\.env.local`
+4. Edit: `c:\Users\anndy\PeaceMatcher\.env.local`
 5. Change: `EMAIL_PASSWORD=your_app_password_here`
 6. To: `EMAIL_PASSWORD=abcdefghijklmnop` (your password, no spaces)
 7. Save file

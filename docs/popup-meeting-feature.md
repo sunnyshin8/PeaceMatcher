@@ -61,6 +61,6 @@ const popup = window.open(
 ## Benefits
 - **Immersive Experience**: Full-size video conferencing window
 - **Better Audio/Video**: Larger interface for camera/microphone controls
-- **Multi-tasking**: Users can access other parts of MagicMeds while in meeting
+- **Multi-tasking**: Users can access other parts of PeaceMatcher while in meeting
 - **Professional**: More suitable for healthcare consultations
 - **Accessibility**: Larger interface elements for better usability

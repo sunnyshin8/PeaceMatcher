@@ -1,4 +1,4 @@
-# 📊 MagicMeds - Executive Summary & Quick Reference
+# 📊 PeaceMatcher - Executive Summary & Quick Reference
 
 **Date**: November 13, 2025  
 **Status**: Phase 1 - Foundation (Development)  
@@ -8,9 +8,9 @@
 
 ## 🎯 Project Overview
 
-### What is MagicMeds?
+### What is PeaceMatcher?
 
-**MagicMeds** is an AI-powered healthcare management platform designed specifically for India. It combines intelligent medical assistance with comprehensive healthcare management to make quality healthcare accessible, affordable, and convenient for everyone.
+**PeaceMatcher** is an AI-powered healthcare management platform designed specifically for India. It combines intelligent medical assistance with comprehensive healthcare management to make quality healthcare accessible, affordable, and convenient for everyone.
 
 ### Key Statistics
 
@@ -210,7 +210,7 @@ Configuration Files:
 
 ```bash
 # 1. Navigate to project
-cd c:\Users\anndy\MagicMeds
+cd c:\Users\anndy\PeaceMatcher
 
 # 2. Install dependencies
 npm install
@@ -584,7 +584,7 @@ Progress:
 
 ## ✅ Checklist for New Developers
 
-When joining the MagicMeds team:
+When joining the PeaceMatcher team:
 
 ```
 □ Clone repository
@@ -609,7 +609,7 @@ When joining the MagicMeds team:
 
 ---
 
-## 🎓 Learning Resources for MagicMeds
+## 🎓 Learning Resources for PeaceMatcher
 
 ### For Frontend Developers
 

@@ -1,4 +1,4 @@
-# 🎨 MagicMeds - Visual Guides & Flowcharts
+# 🎨 PeaceMatcher - Visual Guides & Flowcharts
 
 **Version**: 1.0  
 **Date**: November 13, 2025
@@ -447,7 +447,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
 Step 2: Prepare Prompt
 ──────────────────────
 System Context:
-  "You are MagicMeds AI, a healthcare assistant..."
+  "You are PeaceMatcher AI, a healthcare assistant..."
   
 User Context:
   - Detected symptoms

@@ -1,14 +1,14 @@
-# 📑 MagicMeds Documentation Index
+# 📑 PeaceMatcher Documentation Index
 
 **Generated**: November 13, 2025  
-**Project**: MagicMeds - AI-Powered Healthcare Platform  
+**Project**: PeaceMatcher - AI-Powered Healthcare Platform  
 **Version**: 1.0
 
 ---
 
 ## 📚 Complete Documentation Set
 
-This directory contains a comprehensive analysis and workflow documentation for the MagicMeds project. Below is a guide to all available documents.
+This directory contains a comprehensive analysis and workflow documentation for the PeaceMatcher project. Below is a guide to all available documents.
 
 ---
 
@@ -523,7 +523,7 @@ You now have access to:
 
 ---
 
-**Welcome to the MagicMeds team! 🎉**
+**Welcome to the PeaceMatcher team! 🎉**
 
 Start with **EXECUTIVE_SUMMARY.md** if you haven't already.
 

@@ -9,7 +9,7 @@
 **Fix (5 steps):**
 1. https://myaccount.google.com/apppasswords
 2. Generate password → Copy 16 chars → Remove spaces
-3. Edit: `c:\Users\anndy\MagicMeds\.env.local`
+3. Edit: `c:\Users\anndy\PeaceMatcher\.env.local`
 4. Set: `EMAIL_PASSWORD=abcdefghijklmnop` (no spaces!)
 5. Restart: `npm run dev`
 
@@ -93,7 +93,7 @@
 - "abcd efgh" → ✅ "abcdefgh"
 
 ❌ **Wrong file path**
-- Check: `c:\Users\anndy\MagicMeds\.env.local` (exact path)
+- Check: `c:\Users\anndy\PeaceMatcher\.env.local` (exact path)
 
 ❌ **Not restarting server**
 - Env changes need server restart

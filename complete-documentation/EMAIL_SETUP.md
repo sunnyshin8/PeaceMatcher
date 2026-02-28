@@ -1,12 +1,12 @@
-# Email Configuration Guide for MagicMeds
+# Email Configuration Guide for PeaceMatcher
 
 ## Overview
-The contact form on MagicMeds uses Nodemailer with Gmail SMTP to send emails. This guide explains how to set up email functionality for the contact form.
+The contact form on PeaceMatcher uses Nodemailer with Gmail SMTP to send emails. This guide explains how to set up email functionality for the contact form.
 
 ## Prerequisites
 - A Gmail account
 - Access to Google Account Security settings
-- The MagicMeds project set up locally
+- The PeaceMatcher project set up locally
 
 ## Step-by-Step Setup
 
@@ -25,12 +25,12 @@ The contact form on MagicMeds uses Nodemailer with Gmail SMTP to send emails. Th
 4. Google will show you a 16-character password with spaces (e.g., `xxxx xxxx xxxx xxxx`)
 
 ### 3. Configure Environment Variables
-1. Open `.env.local` in the root of the MagicMeds project
+1. Open `.env.local` in the root of the PeaceMatcher project
 2. Update the email configuration:
    ```
    EMAIL_USER=shingloo93@gmail.com
    EMAIL_PASSWORD=xxxxxxxxxxxx  (the 16-char password from Step 2, without spaces)
-   EMAIL_FROM=noreply@magicmeds.com
+   EMAIL_FROM=noreply@PeaceMatcher.com
    EMAIL_TO=shingloo93@gmail.com
    ```
 

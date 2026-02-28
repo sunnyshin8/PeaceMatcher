@@ -8,7 +8,7 @@ import PersonIcon from '@mui/icons-material/Person';
 
 export default function SupportPage() {
   const [messages, setMessages] = useState<Array<{ id: number; from: string; text: string }>>([
-    { id: 1, from: 'agent', text: 'Hello! I\'m your AI healthcare assistant. How can I help you with MagicMeds today?' },
+    { id: 1, from: 'agent', text: 'Hello! I\'m your AI healthcare assistant. How can I help you with PeaceMatcher today?' },
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +21,7 @@ export default function SupportPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          message: `Healthcare Support Context: User is asking about MagicMeds platform features, appointments, telehealth, or general healthcare questions. Respond helpfully and professionally as a healthcare support assistant. User question: ${userMessage}`,
+          message: `Healthcare Support Context: User is asking about PeaceMatcher platform features, appointments, telehealth, or general healthcare questions. Respond helpfully and professionally as a healthcare support assistant. User question: ${userMessage}`,
           context: 'healthcare_support'
         }),
       });
@@ -34,13 +34,13 @@ export default function SupportPage() {
       return data.response || 'I apologize, but I\'m having trouble responding right now. Please try again or contact our support team directly.';
     } catch (error) {
       console.error('Gemini API error:', error);
-      return 'I\'m experiencing some technical difficulties. Please try again in a moment or contact our support team at support@magicmeds.com for immediate assistance.';
+      return 'I\'m experiencing some technical difficulties. Please try again in a moment or contact our support team at support@PeaceMatcher.com for immediate assistance.';
     }
   };
 
   const send = async () => {
     if (!input.trim() || isLoading) return;
-    
+
     const userMessage = input;
     setMessages((m) => [...m, { id: m.length + 1, from: 'user', text: userMessage }]);
     setInput('');
@@ -66,8 +66,8 @@ export default function SupportPage() {
       py: 4
     }}>
       <Container maxWidth="md">
-        <Typography variant="h3" component="h1" sx={{ 
-          mb: 3, 
+        <Typography variant="h3" component="h1" sx={{
+          mb: 3,
           fontWeight: 'bold',
           background: 'linear-gradient(45deg, #fff 30%, #f0f8ff 90%)',
           WebkitBackgroundClip: 'text',
@@ -88,7 +88,7 @@ export default function SupportPage() {
           boxShadow: '0 8px 32px rgba(31, 38, 135, 0.37)'
         }}>
           <Typography variant="body1" sx={{ color: '#fff', textAlign: 'center' }}>
-            🤖 Ask me anything about MagicMeds, healthcare, appointments, or get medical guidance!
+            🤖 Ask me anything about PeaceMatcher, healthcare, appointments, or get medical guidance!
           </Typography>
         </Box>
 
@@ -103,9 +103,9 @@ export default function SupportPage() {
           display: 'flex',
           flexDirection: 'column'
         }}>
-          <Box sx={{ 
-            flexGrow: 1, 
-            overflowY: 'auto', 
+          <Box sx={{
+            flexGrow: 1,
+            overflowY: 'auto',
             mb: 2,
             maxHeight: '60vh',
             '&::-webkit-scrollbar': {
@@ -121,8 +121,8 @@ export default function SupportPage() {
             }
           }}>
             {messages.map((m) => (
-              <Box key={m.id} sx={{ 
-                display: 'flex', 
+              <Box key={m.id} sx={{
+                display: 'flex',
                 justifyContent: m.from === 'user' ? 'flex-end' : 'flex-start',
                 mb: 2
               }}>
@@ -137,21 +137,21 @@ export default function SupportPage() {
                     width: 40,
                     height: 40,
                     borderRadius: '50%',
-                    background: m.from === 'user' 
-                      ? 'linear-gradient(45deg, #ff6b6b, #ee5a24)' 
+                    background: m.from === 'user'
+                      ? 'linear-gradient(45deg, #ff6b6b, #ee5a24)'
                       : 'linear-gradient(45deg, #4c63d2, #1e3c72)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
                   }}>
-                    {m.from === 'user' ? 
-                      <PersonIcon sx={{ color: '#fff', fontSize: 20 }} /> : 
+                    {m.from === 'user' ?
+                      <PersonIcon sx={{ color: '#fff', fontSize: 20 }} /> :
                       <SmartToyIcon sx={{ color: '#fff', fontSize: 20 }} />
                     }
                   </Box>
                   <Box sx={{
-                    background: m.from === 'user' 
+                    background: m.from === 'user'
                       ? 'linear-gradient(135deg, #2a5298 0%, #4facfe 100%)'
                       : 'linear-gradient(135deg, #00f2fe 0%, #43e97b 100%)',
                     color: '#fff',
@@ -195,18 +195,18 @@ export default function SupportPage() {
             )}
           </Box>
 
-          <Box sx={{ 
-            display: 'flex', 
+          <Box sx={{
+            display: 'flex',
             gap: 1,
             background: 'rgba(255,255,255,0.1)',
             borderRadius: '15px',
             p: 1,
             border: '1px solid rgba(255,255,255,0.2)'
           }}>
-            <TextField 
-              fullWidth 
-              placeholder="Ask about appointments, symptoms, or MagicMeds features..." 
-              value={input} 
+            <TextField
+              fullWidth
+              placeholder="Ask about appointments, symptoms, or PeaceMatcher features..."
+              value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               disabled={isLoading}
@@ -224,8 +224,8 @@ export default function SupportPage() {
                 }
               }}
             />
-            <Button 
-              variant="contained" 
+            <Button
+              variant="contained"
               onClick={send}
               disabled={isLoading || !input.trim()}
               sx={{

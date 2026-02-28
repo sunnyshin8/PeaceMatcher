@@ -43,7 +43,7 @@ The password Google shows has spaces, but we need to remove them.
 - You should use: `abcdefghijklmnop`
 
 #### Step 4: Update .env.local
-1. Open: `c:\Users\anndy\MagicMeds\.env.local`
+1. Open: `c:\Users\anndy\PeaceMatcher\.env.local`
 2. Find this line:
    ```
    EMAIL_PASSWORD=your_app_password_here
